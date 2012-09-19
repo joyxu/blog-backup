@@ -1,9 +1,11 @@
+
 var JoyXu = JoyXu || {
     Blog:{}
 }
 
 JoyXu.Blog = function(){
-    this.indexPage = encodeURI("file:///source/blog/post/index.json");
+    this.host = "http://joyxu.github.com/post/" ; //"file:///source/blog/post/";
+    this.indexPage = encodeURI(this.host + "index.json");
     this.col = 4;
     this.tips = [];
     this.showTipDiv = "";
@@ -87,7 +89,8 @@ JoyXu.Tip = function(param){
     this.content = param.content || "";
     this.date = param.date || "";
     this.category = param.category || "other";
-    this.path = encodeURI("file:///source/blog/post/" + this.title);
+    this.host = "http://joyxu.github.com/post/"; //"file:///source/blog/post/";    
+    this.path = encodeURI(this.host + this.title);
 }
 
 JoyXu.Tip.prototype.getShortTip = function(){
