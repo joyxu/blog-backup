@@ -1,0 +1,24 @@
+###打算用以下技术实现：
+
+目前还不知道效果是什么样的，但是已经有了目标的网站[coderwall](http://coderwall.com/n/backbone-js)
+
+#   Markdown
+关于markdwon的学习资料可以参考[Markdown 中文基础教程文档](http://opengit.org/blog/markdown_basics.html) 和[Markdown: Syntax](http://daringfireball.net/projects/markdown/syntax)
+
+在这篇文章里，经常用到的语法就只有很少的几种:
+
+*   \#号用来标识标题
+*   \*号用来标识无序的列表
+
+今天早上刚刚已经开始用Markdown写这篇博文了，能看到这的就是第一版.
+
+#   backbone.js
+
+#   jquery
+
+###目的
+
+*   早就想在github上面建立一个自己的博客
+*   刚好前几天看到有博友写了一篇类似的
+
+###或许现在看起来还是很丑陋，但是我会让它越来越好看的。
