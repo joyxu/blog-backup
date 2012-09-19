@@ -4,7 +4,7 @@ var JoyXu = JoyXu || {
 }
 
 JoyXu.Blog = function(){
-    this.host = "http://joyxu.github.com/post/" ; //"file:///source/blog/post/";
+    this.host = "post/" ; //"file:///source/blog/post/";
     this.indexPage = encodeURI(this.host + "index.json");
     this.col = 4;
     this.tips = [];
@@ -89,7 +89,7 @@ JoyXu.Tip = function(param){
     this.content = param.content || "";
     this.date = param.date || "";
     this.category = param.category || "other";
-    this.host = "http://joyxu.github.com/post/"; //"file:///source/blog/post/";    
+    this.host = "post/"; //"file:///source/blog/post/";    
     this.path = encodeURI(this.host + this.title);
 }
 
