@@ -27,7 +27,11 @@ JoyXu.Blog.prototype.initTips = function(parentid){
     var that = this;
     $.ajax({
         url: that.indexPage ,
-        dataType: 'json',
+        dataType: "html",
+        error: function(jqXHR, textStatus, errorThrown){
+            alert(textStatus);
+            alert( jqXHR.responseText);
+        },
         success: function(data){
             var tips = eval(data);
             var index = 0;
@@ -70,6 +74,7 @@ JoyXu.Blog.prototype.setClickOnTip = function(index){
     $("#" + this.showTipDiv).empty();
     $.ajax({
         url: tip.path,
+        dataType: "html",
         success: function(data){
             var converter = new Showdown.converter();
             $("#" + that.showTipDiv).append(converter.makeHtml(data));
