@@ -1,0 +1,83 @@
+.persontext {
+    display:block;
+    font-size:16px;
+    color:black;
+    float:right;
+    margin-right:50px;
+}
+
+.tip {
+  float: left;
+  width: 178px;
+  height: 178px;
+  margin: 20px;
+  background: white;
+  border-radius: 3px;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #c1ccd4;
+  font-size:20px;
+  cursor:auto;
+}
+
+.tiprow {
+  width: 900px;
+  float: right;
+  margin-bottom: 25px;
+}
+
+#tipdetail {
+    display:block;
+    background-color:white;
+    opacity: 0.9;
+}
+
+#tips {
+
+}
+
+#header {
+    background-color: #343131;
+    display: block;
+    font-family: MuseoSans-300, arial, sans-serif;
+    font-size: 10px;
+    height: 30px;
+    margin: 0px;
+}
+
+#header h3 {
+    color: white;
+    display: block;
+    font-family: MuseoSans-300, arial, sans-serif;
+    font-size: 20px;
+    line-height:30px;
+    text-align:center;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: black 0px -1px 0px;
+}
+
+#person {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.296875) 0px 1px 3px 0px;
+    color: #444;
+    display: block;
+    font-family: 'helvetica neue', arial, sans-serif;
+    font-size: 12px;
+    height: 399px;
+    left: 50px;
+    opacity: 1;
+    padding: 15px 15px 0px 15px;
+    position: absolute;
+    top: 68px;
+    width: 192px;
+}
+
+body {
+    background: url(image/blue-texture-bg.jpg) repeat;
+    display: block;
+}
+
+html {
+    overflow-y: scroll;
+}
