@@ -27,6 +27,7 @@ JoyXu.Blog.prototype.initTips = function(parentid){
     var that = this;
     $.ajax({
         url: that.indexPage ,
+        dataType: 'json',
         success: function(data){
             var tips = eval(data);
             var index = 0;
