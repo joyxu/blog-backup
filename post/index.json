@@ -14,10 +14,10 @@
     },
 
     {
-        title: "20120914-github建个人blog",
-        category: "other",
-        date:   "20120914",
-        tags:   ["github" , "blog" , "showdown" , "location.hash"]
+        title: "20120920-QtWebkit网页显示视频",
+        category: "QtWebkit Video",
+        date:   "20120920",
+        tags:   ["QtWebkit" , "Video"]
     },
 
     {
