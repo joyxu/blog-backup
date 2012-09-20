@@ -14,6 +14,7 @@ QtWebkit 自定义浏览器
 具体的做法：
 重写WebView的paintEvent方法，清空一块区域，
 下面是一个例子：
+
     void CMyWebView::paintEvent( QPaintEvent* event )
     {
         QWebView::paintEvent(event);
