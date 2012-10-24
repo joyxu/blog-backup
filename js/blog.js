@@ -58,7 +58,7 @@ JoyXu.Blog.prototype.initTips = function(parentid){
                 html += "</ul>"
             }
             $("#" + parentid).append(html);
-            $("#" + parentid).append("<div style="clear:both"></div>");
+            $("#" + parentid).append("<div style='clear:both'></div>");
             $("#" + parentid + "> ul > li").each(function(i){
                 var index = i;
                 $(this).click(function(){
