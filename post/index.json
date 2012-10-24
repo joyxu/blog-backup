@@ -25,5 +25,12 @@
         category: "QtWebkit",
         date:   "20121024",
         tags:   ["QtWebkit" , "javascript"]
+    },
+
+    {
+        title: "20121025-Android中Webkit和JS通信",
+        category: "Android",
+        date:   "20121025",
+        tags:   ["Webkit" , "javascript"]
     }
 ]
