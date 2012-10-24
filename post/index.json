@@ -21,9 +21,9 @@
     },
 
     {
-        title: "20120914-github建个人blog",
-        category: "other",
-        date:   "20120914",
-        tags:   ["github" , "blog" , "showdown" , "location.hash"]
+        title: "20121024-QtWebkit和JS通信",
+        category: "QtWebkit",
+        date:   "20121024",
+        tags:   ["QtWebkit" , "javascript"]
     }
 ]
