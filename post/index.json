@@ -39,5 +39,12 @@
         category: "Android",
         date:   "20121025",
         tags:   ["Webkit" , "javascript"]
+    },
+
+    {
+        title: "20121025-QML",
+        category: "Qt QML",
+        date:   "20121025",
+        tags:   ["Qt" , "QML"]
     }
 ]
