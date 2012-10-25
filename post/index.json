@@ -32,5 +32,12 @@
         category: "Android",
         date:   "20121025",
         tags:   ["Webkit" , "javascript"]
+    },
+
+    {
+        title: "20121025-Web显示Android应用程序图片",
+        category: "Android",
+        date:   "20121025",
+        tags:   ["Webkit" , "javascript"]
     }
 ]
