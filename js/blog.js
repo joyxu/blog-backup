@@ -6,7 +6,7 @@ var JoyXu = JoyXu || {
 JoyXu.Blog = function(){
     this.host = "post/" ; //"file:///source/blog/post/";
     this.indexPage = encodeURI(this.host + "index.json");
-    this.col = 4;
+    this.col = 3;
     this.tips = [];
     this.showTipDiv = "";
 
@@ -50,18 +50,20 @@ JoyXu.Blog.prototype.initTips = function(parentid){
                     html += "<ul class='tiprow'>";
                 }
                 html += "<li class='tip'>" + tip.getShortTip() + "</li>";
-                if( this.col - 1 == index % that.col){
+                if( that.col - 1 == index % that.col){
                     html += "</ul>"
                 }
             }
-            if( this.col - 1 > index % that.col){
+            if( that.col - 1 > index % that.col){
                 html += "</ul>"
             }
             $("#" + parentid).append(html);
-            $("#" + parentid + "> ul > li").each(function(i){
-                var index = i;
+            $("#" + parentid + "> ul").each(function(i){
+                var row = i;
+                $(this).find(">li").each(function(j){
                 $(this).click(function(){
-                    that.setClickOnTip(index);
+                        that.setClickOnTip(row*that.col + j);
+                    });               
                 });
             });
         }
@@ -82,7 +84,6 @@ JoyXu.Blog.prototype.setClickOnTip = function(index){
                 position: 'absolute', 
                 'z-index': 10000, 
                 width: $("body").width(), 
-                height:$("body").height(), 
             }); 
             $("#" + that.showTipDiv).show();
         }
