@@ -46,5 +46,12 @@
         category: "Qt QML",
         date:   "20121025",
         tags:   ["Qt" , "QML"]
+    },
+
+    {
+        title: "20121224-ffmpeg,demux,seek",
+        category: "ffmpeg",
+        date:   "20121224",
+        tags:   ["ffmpeg"]
     }
 ]
