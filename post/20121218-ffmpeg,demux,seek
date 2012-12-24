@@ -13,27 +13,27 @@
 
 ##Today I want to talk how to demux network stream by ffmpeg, the full procedure is as following:
 
-1   register movie container format and codec by calling av_rigister_all()
+1   register movie container format and codec by calling av\_rigister\_all()
 
-2   open the network stream by calling av_open_input_stream()
+2   open the network stream by calling 'av\_open\_input\_stream()'
 
-3   find the stream info by calling av_find_stream_info()
+3   find the stream info by calling 'av\_find\_stream\_info()'
 
-4   loop all the stream and find audio and video by checking the codec_type of each stream(nb_streams)
+4   loop all the stream and find audio and video by checking the 'codec\_type' of each 'stream(nb\_streams)'
 
-5   alloc memory for packet of frame by calling av_init_packet or avcodec_alloc_frame
+5   alloc memory for packet of frame by calling 'av\_init\_packet' or 'avcodec\_alloc\_frame'
 
-6   read frame from stream by calling av_read_frame
+6   read frame from stream by calling 'av\_read\_frame'
 
 7   check the type of stream(audio or video)
 
-8   after read all the frame calling av_close_input_stream to close the stream
+8   after read all the frame calling 'av\_close\_input\_stream' to close the stream
 
 ##if want to do time search,the procedure is as following:
 
-1   call av_seek_frame to seek by time or by byte
+1   call 'av\_seek\_frame' to seek by time or by byte
 
-2   call av_read_frame to read packet and do demux and decode
+2   call 'av\_read\_frame' to read packet and do demux and decode
 
 #refer source code:
 
