@@ -23,5 +23,5 @@ if want to do time search,the procedure is as following:
 2   call av_read_frame to read packet and do demux and decode
 
 refer source code:
-1   [ffmpeg demux/remux]
-2   [ffmpeg demux]
+1   [ffmpeg demux/remux](https://github.com/joyxu/joyxu.github.com/tree/master/attachment)
+2   [ffmpeg demux](https://github.com/joyxu/joyxu.github.com/tree/master/attachment)

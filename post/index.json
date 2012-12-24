@@ -49,9 +49,9 @@
     },
 
     {
-        title: "20121224-ffmpeg,demux,seek",
+        title: "20121218-ffmpeg,demux,seek",
         category: "ffmpeg",
-        date:   "20121224",
+        date:   "20121218",
         tags:   ["ffmpeg"]
     }
 ]
