@@ -4,11 +4,13 @@ Android中应用程序的图标都是各个程序的资源或者系统的资源�
 已经不是一副图片，如果一个应用是基于web的而且要显示系统
 或者应用的图标改怎么做呢？
 
-首先说说web中显示图片的方法:
-1   img的src中直接指向图片的uri
-2   img的src直接是一副图片的[base64编码](http://baike.baidu.com/view/469071.htm)
+##首先说说web中显示图片的方法:
 
-在这里要说的就是通过把图片编码成base64，之后显示，具体做法：
+1.img的src中直接指向图片的uri
+
+2.img的src直接是一副图片的[base64编码](http://baike.baidu.com/view/469071.htm)
+
+###在这里要说的就是通过把图片编码成base64，之后显示，具体做法：
 
 1   通过Android内部的loadIcon方法得到应用的icon，但是是一个drawable的对象，
 参考代码如下

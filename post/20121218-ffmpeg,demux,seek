@@ -2,30 +2,41 @@
 
 [ffmpeg](http://ffmpeg.org/) is a very famouse multimedia library.
 
-There are several sites I think are very helpful for multimedia developer:
+##There are several sites I think are very helpful for multimedia developer:
 
-1   [ffmpeg detail](http://3xin2yi.info/wwwroot/tech/doku.php/tech:multimedia:ffmpeg)
-2   [ffmpeg decode procedure](http://www.douban.com/note/228831821/)
-3   [An ffmpeg and SDL Tutorial](http://dranger.com/ffmpeg/)
+1.[ffmpeg detail](http://3xin2yi.info/wwwroot/tech/doku.php/tech:multimedia:ffmpeg)
+
+2.[ffmpeg decode procedure](http://www.douban.com/note/228831821/)
+
+3.[An ffmpeg and SDL Tutorial](http://dranger.com/ffmpeg/)
 
 
-Today I want to talk how to demux network stream by ffmpeg, the full procedure is as following:
+##Today I want to talk how to demux network stream by ffmpeg, the full procedure is as following:
 
-1   register movie container format and codec by calling av_rigister_all()
-2   open the network stream by calling av_open_input_stream()
-3   find the stream info by calling av_find_stream_info()
-4   loop all the stream and find audio and video by checking the codec_type of each stream(nb_streams)
-5   alloc memory for packet of frame by calling av_init_packet or avcodec_alloc_frame
-6   read frame from stream by calling av_read_frame
-7   check the type of stream(audio or video)
-8   after read all the frame calling av_close_input_stream to close the stream
+1.register movie container format and codec by calling av_rigister_all()
 
-if want to do time search,the procedure is as following:
+2.open the network stream by calling av_open_input_stream()
 
-1   call av_seek_frame to seek by time or by byte
-2   call av_read_frame to read packet and do demux and decode
+3.find the stream info by calling av_find_stream_info()
 
-refer source code:
+4.loop all the stream and find audio and video by checking the codec_type of each stream(nb_streams)
 
-1   [ffmpeg demux/remux](https://github.com/joyxu/joyxu.github.com/tree/master/attachment)
-2   [ffmpeg demux](https://github.com/joyxu/joyxu.github.com/tree/master/attachment)
+5.alloc memory for packet of frame by calling av_init_packet or avcodec_alloc_frame
+
+6.read frame from stream by calling av_read_frame
+
+7.check the type of stream(audio or video)
+
+8.after read all the frame calling av_close_input_stream to close the stream
+
+##if want to do time search,the procedure is as following:
+
+1.call av_seek_frame to seek by time or by byte
+
+2.call av_read_frame to read packet and do demux and decode
+
+#refer source code:
+
+1.[ffmpeg demux/remux](https://github.com/joyxu/joyxu.github.com/tree/master/attachment)
+
+2.[ffmpeg demux](https://github.com/joyxu/joyxu.github.com/tree/master/attachment)
